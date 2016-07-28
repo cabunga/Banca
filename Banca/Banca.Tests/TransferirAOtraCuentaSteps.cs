@@ -34,7 +34,7 @@ namespace Banca.Tests
         [Given(@"estoy en la pantalla de cuentas")]
         public void GivenEstoyEnLaPantallaDeCuentas()
         {
-            driver.Navigate().GoToUrl("http://localhost/Banca/Usuario/index");
+            driver.Navigate().GoToUrl("http://localhost/Banca/Login/index");
             driver.FindElement(By.Id("idUsuario")).SendKeys(clienteOrigen.username);
             driver.FindElement(By.Id("idPassword")).SendKeys(clienteOrigen.password);
             driver.FindElement(By.Id("idLoguearse")).Click();

@@ -11,7 +11,7 @@ namespace Banca.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("index", "Login");
         }
     }
 }

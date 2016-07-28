@@ -16,6 +16,7 @@ namespace Banca.Bussines
                 transferencia.ClienteOrigen.Saldo = saldoActualCO - transferencia.Valor;
                 double saldoActualCD = transferencia.ClienteDestino.Saldo;
                 transferencia.ClienteDestino.Saldo = saldoActualCD + transferencia.Valor;
+                transferencia.Valor = 0;
             }
 
             return transferencia;

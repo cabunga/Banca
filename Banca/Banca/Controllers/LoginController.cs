@@ -31,6 +31,7 @@ namespace Banca.Controllers
             {
                 cliente.NumeroCuenta = "10001";
                 cliente.Saldo = 10000;
+                TempData["Cliente"] = cliente;
                 return RedirectToAction("cliente", "Transferencias", cliente);
             }
             else

@@ -18,8 +18,19 @@ namespace Banca.Controllers
             set;
         }
         public ActionResult Index()
-        {           
-            return View();
+        {            
+            var data = (Cliente)TempData["Cliente"];
+            var transfer= (Transferencia)TempData["Transferencia"];
+            
+            if (data != null) {
+                transferenciaObj = new Transferencia();
+                transferenciaObj.ClienteOrigen = data;                
+            } else
+            {
+                transferenciaObj= transfer;
+            }
+            return View(transferenciaObj);
+
         }
         public ActionResult cliente(Cliente cliente)
         {
@@ -29,11 +40,10 @@ namespace Banca.Controllers
         [HttpPost]
         public ActionResult administrar(Transferencia transferencia)
         {
-            //ViewData["transferencia"] = transferencia;
-            //return RedirectToAction("Index",transferencia);
+          
             AdministrarCliente administrar = new AdministrarCliente();
             transferencia = administrar.transferir(transferencia);
-
+            TempData["Transferencia"] = transferencia;
             return RedirectToAction("Index", transferencia);
         }
     }

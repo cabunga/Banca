@@ -28,7 +28,7 @@ namespace Banca.Tests
         [Given(@"Ingreso a la sucursal virtual")]
         public void GivenIngresoALaSucursalVirtual()
         {
-            driver.Navigate().GoToUrl("http://localhost/Banca/Usuario/index");
+            driver.Navigate().GoToUrl("http://localhost/Banca/Login/index");
 
         }
         
