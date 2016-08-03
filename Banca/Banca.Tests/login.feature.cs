@@ -77,7 +77,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 6
  testRunner.When("Ingreso login \"admin\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 7
- testRunner.And("y passwrod \"admin\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("y passwrod \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 8
  testRunner.And("seleccion ingresar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9

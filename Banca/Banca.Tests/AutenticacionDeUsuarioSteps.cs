@@ -28,7 +28,7 @@ namespace Banca.Tests
         [Given(@"Ingreso a la sucursal virtual")]
         public void GivenIngresoALaSucursalVirtual()
         {
-            driver.Navigate().GoToUrl("http://localhost/Banca/Login/index");
+            driver.Navigate().GoToUrl("http://localhost/Banca/Login");
 
         }
         
@@ -47,6 +47,7 @@ namespace Banca.Tests
         [When(@"seleccion ingresar")]
         public void WhenSeleccionIngresar()
         {
+            System.Threading.Thread.Sleep(1000);
             driver.FindElement(By.Id("idLoguearse")).Click();
             
         }
@@ -54,12 +55,10 @@ namespace Banca.Tests
         [Then(@"Ingreso a la pagina de transferencia")]
         public void ThenIngresoALaPaginaDeTransferencia()
         {
-            System.Threading.Thread.Sleep(1000);
-            String url = "http://localhost/Banca/Transferencias";
-            Assert.AreEqual(url, driver.Url);
-            //IAlert alert = driver.SwitchTo().Alert();
-            //String mensaje = alert.Text;
-            //Assert.AreEqual("Bienvenido", mensaje);
+          
+            String url = "http://localhost/Banca/Transferencias";            
+            Assert.IsTrue(driver.Url.Contains(url));
+            
         }
     }
 }

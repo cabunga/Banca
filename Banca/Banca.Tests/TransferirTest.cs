@@ -10,6 +10,7 @@ namespace Banca.Tests
     {
 
         [TestMethod]
+        [TestCategory("UnitTest")]
         public void Transferir()
         {
             //Arrange

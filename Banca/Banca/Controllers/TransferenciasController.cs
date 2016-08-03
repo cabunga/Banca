@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace Banca.Controllers
 {
@@ -39,11 +40,10 @@ namespace Banca.Controllers
         }
         [HttpPost]
         public ActionResult administrar(Transferencia transferencia)
-        {
-          
+        {          
             AdministrarCliente administrar = new AdministrarCliente();
-            transferencia = administrar.transferir(transferencia);
-            TempData["Transferencia"] = transferencia;
+            transferencia = administrar.transferir(transferencia);                        
+            TempData["Transferencia"] = transferencia;           
             return RedirectToAction("Index", transferencia);
         }
     }

@@ -15,7 +15,7 @@ namespace Banca.Tests
         public void login_usuario_valido()
         {
             //Assert
-            String EXITO = "Exitoso";
+          
             String usuario = "admin";
             String password = "admin";
             var usuarioController = new AdministrarUsuarios();
@@ -26,7 +26,7 @@ namespace Banca.Tests
             Boolean estado = usuarioController.getCliente(cliente.username);
             //Arrange
             Assert.IsTrue(estado);
-            //Assert.AreEqual(EXITO,estado);
+            
         }
     }
 }

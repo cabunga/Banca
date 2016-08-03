@@ -1,6 +1,6 @@
 ﻿Feature: Transferir a otra cuenta
 
-@mytag
+@AcceptTest
 Scenario: Transferir dinero desde sucursal
 	Given mi saldo actual es "10000"
 	And estoy en la pantalla de cuentas

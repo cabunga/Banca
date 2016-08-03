@@ -10,5 +10,6 @@ namespace Banca.Models
         public Cliente ClienteOrigen { get; set; }
         public Cliente ClienteDestino { get; set; }
         public double Valor { get; set; }
+        public bool estadoTransaccion { get; set; }
     }
 }

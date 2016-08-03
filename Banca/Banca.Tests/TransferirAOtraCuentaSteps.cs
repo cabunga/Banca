@@ -47,7 +47,9 @@ namespace Banca.Tests
         public void WhenIngresoElSaldoATransferirDe(int saldo)
         {
             driver.FindElement(By.Id("idCuentaOrigen")).SendKeys(clienteOrigen.NumeroCuenta);
+            driver.FindElement(By.Id("idSaldoCO")).Clear();
             driver.FindElement(By.Id("idSaldoCO")).SendKeys(clienteOrigen.Saldo.ToString());
+            driver.FindElement(By.Id("idSaldoTransferir")).Clear();
             driver.FindElement(By.Id("idSaldoTransferir")).SendKeys(saldo.ToString());
             System.Threading.Thread.Sleep(1000);
         }
@@ -67,13 +69,14 @@ namespace Banca.Tests
         [Then(@"veo el mensaje ""(.*)""")]
         public void ThenVeoElMensaje(string mensaje)
         {
-            ScenarioContext.Current.Pending();
+            String msg = driver.FindElement(By.Id("MensajeRespuesta")).Text.ToString();
+            Assert.AreEqual(msg, mensaje); 
         }
         
         [Then(@"mi nuevo saldo es ""(.*)""")]
-        public void ThenMiNuevoSaldoEs(int p0)
+        public void ThenMiNuevoSaldoEs(int saldo)
         {
-            ScenarioContext.Current.Pending();
+            IWebElement element = driver.FindElement(By.Name("ClienteOrigen.Saldo"));           
         }
     }
 }

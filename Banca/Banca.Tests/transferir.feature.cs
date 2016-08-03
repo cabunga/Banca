@@ -65,11 +65,11 @@ namespace Banca.Tests
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Transferir dinero desde sucursal")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("AcceptTest")]
         public virtual void TransferirDineroDesdeSucursal()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Transferir dinero desde sucursal", new string[] {
-                        "mytag"});
+                        "AcceptTest"});
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5

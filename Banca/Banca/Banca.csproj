@@ -129,34 +129,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap-theme.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\ConsultarVuelo.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap.css.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap-theme.min.css.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap-theme.css.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\publishPackage.pubxml" />
-    <None Include="scripts\jquery-1.9.0.intellisense.js" />
-    <Content Include="scripts\jquery-1.9.0.js" />
-    <Content Include="scripts\jquery-1.9.0.min.js" />
-    <Content Include="scripts\jquery-2.1.4.js" />
-    <Content Include="scripts\jquery-2.1.4.min.js" />
-    <Content Include="scripts\jquery-ui-1.8.24.js" />
-    <Content Include="scripts\jquery-ui-1.8.24.min.js" />
-    <Content Include="scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="scripts\jquery.unobtrusive-ajax.min.js" />
-    <None Include="scripts\jquery.validate-vsdoc.js" />
-    <Content Include="scripts\jquery.validate.js" />
-    <Content Include="scripts\jquery.validate.min.js" />
-    <Content Include="scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="scripts\knockout-2.2.0.debug.js" />
-    <Content Include="scripts\knockout-2.2.0.js" />
-    <Content Include="scripts\Transferencia.js" />
-    <Content Include="scripts\Login.js" />
-    <Content Include="scripts\modernizr-2.6.2.js" />
-    <Content Include="scripts\RegistrarUsuario.js" />
-    <None Include="scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -187,9 +191,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Usuario\Index.cshtml" />
     <None Include="Properties\PublishProfiles\publisdev.pubxml" />
-    <Content Include="scripts\jquery-1.9.0.min.map" />
     <Content Include="Views\Transferencias\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <None Include="Web.Debug.config">

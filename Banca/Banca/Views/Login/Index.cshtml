@@ -11,47 +11,31 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
-<script src="~/Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="~/Scripts/Login.js">
-</script>
-<script type="text/javascript">
-    var urlLoginUsuario = '@Url.Action("Autenticarse","Usuario")';
-</script>
+<link href="~/Content/bootstrap.css" rel="stylesheet"/>
+
 <body>
-    @using (Html.BeginForm("Autenticarse", "Login", FormMethod.Post, new { @class = "form-inline" }))
-    {
-        <div>
-            <h4>Usuario</h4>
-            <hr />
-            <dl class="dl-horizontal">
+    <div class="panel panel-primary">
+        @using (Html.BeginForm("Autenticarse", "Login", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            <div class="panel-heading">
+                <h4>Usuario</h4>
 
-
-
-                <dt>
+                <div class="panel-body">
                     @Html.LabelFor(model => Model.username, "Nombre de usuario")
-                </dt>
-                <dt>
                     @Html.TextBoxFor(model => Model.username, new { type = "text", @class = "form-control", @id = "idUsuario" })
+                </div>
 
-                </dt>
-                <dt>
+                <div class="panel-body">
                     @Html.LabelFor(model => Model.password, "Contraseña")
-                </dt>
-                <dt>
                     @Html.TextBoxFor(model => model.password, new { type = "password", @class = "form-control", @id = "idPassword" })
+                </div>
+                <div class="panel-body">
 
-
-                </dt>
-
-
-            </dl>
+                    <button id="idLoguearse" class="btn btn-primary" type="submit">Login</button>
+                </div>
+            </div>
+        }
         </div>
-        <p>
-            <!-- <input id="idLoguearse" type="button" value="Login" onclick="LoguearUsuario();"/>
-                -->
-            <button id="idLoguearse" type="submit">Loguearse</button>
-        </p>
-    }
 </body>
 </html>
  
