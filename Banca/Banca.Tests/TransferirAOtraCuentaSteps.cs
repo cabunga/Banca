@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using TechTalk.SpecFlow;
-using static NUnit.Core.NUnitFramework;
+using NUnit.Framework;
 
 namespace Banca.Tests
 {
