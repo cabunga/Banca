@@ -3,3 +3,7 @@
 ################################################################################
 
 /Banca/Banca
+/Banca/Banca.Tests/obj/Debug
+/Banca/Service
+/Banca/.vs/Banca/v15/Server/sqlite3
+/Banca/.vs/Banca/v15
